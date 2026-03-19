@@ -98,27 +98,41 @@ a:hover {
   line-height: 1.65;
 }
 
-/* Writing */
-.post {
-  margin-bottom: 3rem;
+/* Writing — Post List */
+.post-list {
+  border-top: 1px solid #ddd;
 }
 
-.post h2 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.35;
-  margin-bottom: 4px;
+.post-entry {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
-.post h2 a {
-  color: #1a1a1a;
+.post-entry:hover {
+  opacity: 0.7;
   text-decoration: none;
 }
 
-.post h2 a:hover {
+.post-title {
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
   color: #C96442;
+  line-height: 1.35;
 }
 
+.post-date {
+  display: block;
+  font-style: italic;
+  font-size: 15px;
+  color: #888;
+  margin-top: 3px;
+}
+
+/* Writing — Article */
 .post-subtitle {
   font-style: italic;
   color: #666;
