@@ -96,17 +96,42 @@ a:hover {
   line-height: 1.65;
 }
 
-.belief-heading {
+/* Notion-style toggle */
+.belief-toggle {
+  border-bottom: 1px solid #eee;
+}
+
+.belief-toggle:first-of-type {
+  border-top: 1px solid #eee;
+}
+
+.belief-toggle summary {
   font-size: 18px;
   font-weight: 400;
   font-style: italic;
   color: #888;
-  margin-top: 32px;
-  margin-bottom: 12px;
+  padding: 14px 0;
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.2s ease;
 }
 
-.belief-heading:first-of-type {
-  margin-top: 0;
+.belief-toggle summary::-webkit-details-marker,
+.belief-toggle summary::marker {
+  display: none;
+  content: '';
+}
+
+.belief-toggle summary:hover {
+  color: #C96442;
+}
+
+.belief-toggle[open] summary {
+  color: #1a1a1a;
+}
+
+.belief-toggle .beliefs {
+  padding-bottom: 16px;
 }
 
 /* Writing — Post List */
