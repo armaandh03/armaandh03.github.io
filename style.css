@@ -85,6 +85,19 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Quote */
+.quote {
+  margin-top: 48px;
+  padding: 0;
+  border: none;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
 /* Beliefs */
 .beliefs {
   list-style: disc;
